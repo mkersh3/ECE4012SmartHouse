@@ -1,0 +1,3 @@
+RED wire -> 5V
+WHITE wire -> ground
+BLACK wire -> 5V w/ 10kohm resistor in WITH black wire to digital pin A1

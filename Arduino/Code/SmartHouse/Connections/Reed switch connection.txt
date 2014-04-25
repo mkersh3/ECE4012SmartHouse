@@ -1,0 +1,2 @@
+Two white Cables: one to pin, one to ground
+Order doesn't matter.

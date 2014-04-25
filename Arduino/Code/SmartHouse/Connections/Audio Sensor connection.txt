@@ -1,0 +1,3 @@
+Blue: Data -> analog in   (Yellow Cable)
+Red: Power -> 5V   (Red Cable)
+Black: Ground -> GND   (Black Cable)

@@ -1,0 +1,25 @@
+Serial Communications Between Arduino and HomeSever
+baud: 115200
+
+[Command]		[Code]					[Parameters (In Order)]		[Trigger] 
+-------------
+Arduino Recieve from HomeServer:
+
+Initialize Command      I:[1/0] A:[#]				@Armed/ActivityLvL		*Send on Startup
+System Armed		S:[1/0]					@Armed				*User
+Full Status Command     F									*Interval
+Raw Activity Request    R									*Interval
+Activity Level Change   A:[#]					@ActivityLvL			*User
+Turn On/Off Light       L:[1/0]					@Light				*User
+
+
+-------------
+Arduino Send to HomeServer:
+
+Initialized             I									*On Command
+Is Door Open            D:[1/0]					@Door                       	*Send on Change
+Above Acitivity Level   W:[#]   				@Activity                   	*Send when Above
+Send Light Change       L:[1/0]					@Light                      	*Send on Change
+Raw Activity		A:[#] U:[#] M:[#]			@Activity/Audio/Motion		*On Command
+Full Status             S:[1/0] T:[#] L:[1/0] D:[1/0] A:[#]	@Armed/Temp/Light/Door/Activity	*On Command
+

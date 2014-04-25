@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+{%block header %}{%endblock%}
+{%block content %}
+<html>
+    <body>
+        <div class="form-group">
+            <form action="/command_both/" method="post">{%csrf_token%}
+                
+                {{ form.as_p }}
+                <input class="btn btn-default" type="submit" value="Submit"/>
+            </form>
+        </div>
+    </body>
+</html>
+
+{% endblock %}

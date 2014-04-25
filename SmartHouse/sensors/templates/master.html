@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+    <head>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{%static 'sensors/css/bootstrap.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{%static 'sensors/css/bootstrap-theme.min.css' %}" type="text/css">
+        <script src="{%static 'sensors/js/jquery-1.11.0.min.js' %}" type="text/javascript"></script>
+        <script src="{%static 'sensors/js/bootstrap.min.js' %}"type="text/javascript"></script>
+        <title>{%block title %}SmartHouse!{%endblock%}</title>
+    </head>
+    <html>{% block content %}{% endblock %}</html>
